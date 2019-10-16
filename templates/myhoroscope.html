@@ -1,19 +1,31 @@
 <!doctype html>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/style.css">
 <html>
-	<head>
-		<title>My Horoscope</title>
-	</head> 
-	<body>
-
-		<p>Fecha: {{data['current_date']}}!</p>
-		<p>Humor: {{data['mood']}}!</p>
-		<p>Color: {{data['color']}}!</p>
-		<p>Numero de la suerte: {{data['lucky_number']}}!</p>
-		<p>Compatibilidad: {{data['compatibility']}}!</p>
-		<p>Mensaje : {{data['description']}}!</p>
-		
-		
-
-	</body> 
+<head>
+	<title>Horoscapp</title>
+</head> 
+	<div class="container">
+		<div class="container-fluid">
+			<div class="main-container justify-content-center col-xs-12 ml-5 mb-5">
+				<header class="col-xs-12 md-5 mb-5">
+					<h1>Estos son tus resultados: </h1>
+				</header>
+				</div>
+			</div>
+<body>
+	<div class="container-fluid">
+		<div class="main-container justify-content-center col-xs-12 ml-5 mb-5">
+			<p>A dia de: {{data['current_date']}}!</p>
+			<p>Te sientes: {{data['mood']}}!</p>
+			<p>Tu Color es: {{data['color']}}!</p>
+			<p>Tu Numero de la suerte: {{data['lucky_number']}}!</p>
+			<p>Tu Compatibilidad: {{data['compatibility']}}!</p>
+			<p>Tu Mensaje del dia : {{data['description']}}!</p>
+		</div>
+	</div>
+	</div>
+</body> 
 </html>

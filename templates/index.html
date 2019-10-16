@@ -2,26 +2,38 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
 integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/style.css">
 
 <html>
 	<head>
 		<title>Horoscapp</title>
 	</head> 
 	<body>
+	<div class="container">	
+		<div class="container-fluid main-container justify-content-center col-xs-12 ml-5 mb-5">
+			<div class="row">
+				<div class="col-xs-12 md-5 mb-5">
+					<header>
+							<h1>Bienvenido a horoscapp</h1>
+					</header>	
+				</div>		
+			</div>		
 		
-	<div class="container"><p>Bienvenido a horoscapp</p>
-	</div>
-		
-
-		<p>Te gustaria conocer tu horoscopo? </p>
-		<div id="contact-form">
-			<form method="post" action="/horoscope">
-				<label for="text">Por favor introduzca su fecha de nacimiento (dd-mm-yy):</label>
-				<input type="Date" id="dob" name="dob" required="required">
-				<input type="submit" value="Submit" id="submit"/>
-			</form>
+			
+		<div class="content">
+			<h2 class="mb-4 col-xs-12">Te gustaria conocer tu horoscopo? </h2>
+			<div id="contact-form" class="form-group">
+				<form method="post" class="col-xs-12" action="/horoscope">
+						<label for="text">Por favor introduzca su fecha de nacimiento (dd-mm-yy):</label><br>
+						<input type="Date" id="dob" name="dob" class="form-control date datepicker mt-4" required="required">
+					<div class="col-md-2 col-xs-12 col1 center-block">
+						<input type="submit" value="Submit" class="btn btn-primary center-block mt-5 col-xs-12" id="submit"/>
+					</div>
+				</form>
+			</div>
 		</div>
-
-
+		</div>
+	</div>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</body> 
 </html>
