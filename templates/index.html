@@ -1,0 +1,27 @@
+<!doctype html>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<html>
+	<head>
+		<title>Horoscapp</title>
+	</head> 
+	<body>
+		
+	<div class="container"><p>Bienvenido a horoscapp</p>
+	</div>
+		
+
+		<p>Te gustaria conocer tu horoscopo? </p>
+		<div id="contact-form">
+			<form method="post" action="/horoscope">
+				<label for="text">Por favor introduzca su fecha de nacimiento (dd-mm-yy):</label>
+				<input type="Date" id="dob" name="dob" required="required">
+				<input type="submit" value="Submit" id="submit"/>
+			</form>
+		</div>
+
+
+	</body> 
+</html>
